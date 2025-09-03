@@ -1,0 +1,11 @@
+D:\code\C#\testSQL\testSQL\bin\Debug\testSQL.exe.config
+D:\code\C#\testSQL\testSQL\bin\Debug\testSQL.exe
+D:\code\C#\testSQL\testSQL\bin\Debug\testSQL.pdb
+D:\code\C#\testSQL\testSQL\obj\Debug\testSQL.csproj.AssemblyReference.cache
+D:\code\C#\testSQL\testSQL\obj\Debug\testSQL.Form1.resources
+D:\code\C#\testSQL\testSQL\obj\Debug\testSQL.Properties.Resources.resources
+D:\code\C#\testSQL\testSQL\obj\Debug\testSQL.csproj.GenerateResource.cache
+D:\code\C#\testSQL\testSQL\obj\Debug\testSQL.csproj.CoreCompileInputs.cache
+D:\code\C#\testSQL\testSQL\obj\Debug\testSQL.exe
+D:\code\C#\testSQL\testSQL\obj\Debug\testSQL.pdb
+D:\code\C#\testSQL\testSQL\obj\Debug\testSQL.Form2.resources

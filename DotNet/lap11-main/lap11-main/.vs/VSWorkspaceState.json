@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\EmployeeManagement",
+    "\\EmployeeManagement\\EmployeeManagement",
+    "\\EmployeeManagement\\EmployeeManagement\\Areas\\Identity\\Pages",
+    "\\EmployeeManagement\\EmployeeManagement\\Areas\\Identity\\Pages\\Account",
+    "\\EmployeeManagement\\EmployeeManagement\\Data",
+    "\\EmployeeManagement\\EmployeeManagement\\Models",
+    "\\EmployeeManagement\\EmployeeManagement\\Models\\DTOs",
+    "\\EmployeeManagement\\EmployeeManagement\\Pages",
+    "\\EmployeeManagement\\EmployeeManagement\\Shared"
+  ],
+  "SelectedNode": "\\EmployeeManagement\\EmployeeManagement\\Models",
+  "PreviewInSolutionExplorer": false
+}
