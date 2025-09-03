@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Nhập</title>
+    <link rel="icon" type="image/png" href="/image/Anymo_icon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/31f3088ab5.js"
+      crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Begin Header Section -->
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-lg">
+          <a class="navbar-brand" href="index.html">
+            <img src="image/Anymo logo 80x80 (NB).png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav primary-nav">
+              <!-- Left Menu -->
+              <li class="nav-item">
+                <a id="home-page" class="nav-link" href="index.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Liên hệ</a>
+              </li>
+            </ul>
+
+            <!-- Right Menu -->
+            <ul class="navbar-nav ms-auto secondary-nav">
+              <li class="nav-item">
+                <a id="login-btn" class="nav-link" href="login.html">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span id="login">Đăng nhập</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="signup-btn" class="nav-link" href="register.html">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span id="signup">Đăng ký</span>
+                </a>
+              </li>
+
+              <input
+                type="text"
+                placeholder="Tìm kiếm sản phẩm..."
+                class="search-input" />
+              <li class="nav-item">
+                <a class="btn btn-link nav-link" id="searchButton">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="cart.html"
+                  class="btn btn-link nav-link"
+                  id="cartButton">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header Section -->
+    <main>
+      <section class="container-login forms">
+        <div action="" class="form-login login">
+          <div class="form-content">
+            <h3>Đăng Nhập</h3>
+            <div class="form-input">
+              <form action="#">
+                <div class="field input-field">
+                  <input
+                    type="text"
+                    id="phoneInput"
+                    class="input-login"
+                    placeholder="Nhập số điện thoại" />
+                </div>
+
+                <div class="field input-field">
+                  <input
+                    type="password"
+                    id="passwordInput"
+                    class="password-login"
+                    placeholder="Nhập mật khẩu" />
+                  <i class="fa-regular fa-eye-slash" id="togglePassword"></i>
+                </div>
+                <div class="field button-field">
+                  <button onclick="login()">Đăng Nhập</button>
+                </div>
+                <div id="message"></div>
+                <div class="form-link">
+                  <a href="" class="forgot-pass">Quên mật khẩu?</a>
+                </div>
+              </form>
+              <div class="form-link">
+                <span
+                  >Bạn chưa có tài khoản?
+                  <a href="register.html" class="singup-link">Đăng ký</a></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+
+          <div class="media-options">
+            <a href="#" class="field facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+              <span>Đăng nhập với Facebook</span>
+            </a>
+          </div>
+
+          <div class="media-options">
+            <a href="#" class="field google">
+              <img
+                src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+                alt=""
+                class="google-img" />
+              <span>Đăng nhập với Google</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Begin Footer Section -->
+    <footer class="container-fluid">
+      <div
+        class="footer-container container d-flex flex-wrap align-content-center justify-content-arround">
+        <div class="col-lg-3 footer-first-col">
+          <div class="footer-logo">
+            <img src="image/Anymo logo 150x150 (NB).png" alt="Anymo Logo" />
+          </div>
+
+          <div class="footer-social-media-link">
+            <a href="https://facebook.com">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 footer-second-col">
+          <div class="footer-address">
+            <h4>Thông Tin Liên Hệ</h4>
+            <p>Địa Chỉ: 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ.</p>
+            <p>Số Điện Thoại: 0123456789.</p>
+            <p>Email: anymo@gmail.com.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 footer-third-col">
+          <div class="footer-info">
+            <h4>Về Anymo</h4>
+            <ul>
+              <li><a href="#">Giới Thiệu</a></li>
+              <li><a href="#">Chính Sách</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+              <li><a href="news.html">Tin Tức</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 footer-last-col">
+          <div class="footer-get-promotion">
+            <h4>Nhận Thông Tin Khuyến Mãi</h4>
+            <p>Đăng ký ngay để nhận thông tin khuyến mãi sớm nhất!</p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Nhập Email của bạn..."
+              class="promotion-input" />
+            <button class="btn btn-primary submit-email-button">Gửi</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-to-top-icon">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+
+      <div class="footer-copyright-reserved">
+        <div class="copyright-text">
+          &copy Copyright
+          <!--start getdate tody-->
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All rights reserved | Made by Anymo Group
+          <!--end getdate tody -->
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

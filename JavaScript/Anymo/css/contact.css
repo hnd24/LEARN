@@ -1,0 +1,543 @@
+/* Begin Contact */
+
+.contact {
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .container {
+    max-width: 100%; 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact .container h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.container .contact-wrapper {
+    display: flex; /* Use flexbox for smaller screens */
+    justify-content: space-between;
+}
+
+.contact-wrapper .contact-form {
+    text-align: center;
+}
+
+.contact-wrapper .contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-group.required label::after {
+    content: "*";
+    color: #ff0000;
+    margin-left: 4px;
+}
+
+.contact-form .form-group .textbox {
+    width: calc(100% - 24px); /* Adjusted width of input fields */
+}
+
+.form-group .textbox {
+    width: 100%;
+    padding: 12px;
+    border-radius: 3px;
+    border: #269547 solid 1px;
+}
+
+.textbox input:focus,
+.textbox textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #BEDAA9;
+}
+
+.textbox textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+.textbox textarea::-webkit-scrollbar-thumb {
+    background-color: #1D7035;
+}
+
+.contact-form button {
+    height: 45px;
+    width: 90px;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 0 8px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400px;
+    transition: all 0.2s ease;
+    background-color: #1D7035;
+}
+
+.contact-form button:hover {
+    background-color: #58a370;
+}
+
+.contact-info .contact-form {
+    margin-bottom: 20px;
+}
+
+.contact-wrapper .contact-info {
+    margin-left: 0;
+    text-align: left;
+}
+
+.contact-wrapper .contact-form,
+.contact-wrapper .contact-info {
+    flex: 0 0 calc(48% - -90px); /* Set each column to 50% width with some spacing */
+}
+
+
+.contact-wrapper .contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.contact-wrapper .contact-info p {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.contact-wrapper .contact-info i {
+    color: #1D7035;
+    margin-right: 10px;
+}
+
+.contact-info .branch {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column; /* Stack columns on smaller screens */
+        align-items: center;
+    }
+
+    .contact-wrapper .contact-form,
+    .contact-wrapper .contact-info {
+        flex: 1; /* Take full width on smaller screens */
+        margin-bottom: 16px; /* Add some spacing between stacked columns */
+    }
+    .contact-wrapper .contact-info {
+        margin-left: 0; /* Remove left margin on smaller screens */
+    }
+
+    .contact-form .form-group .textbox {
+        width: 100%; /* Full width for input fields on smaller screens */
+    }
+
+    .contact-form textarea {
+        height: 100px;
+    }
+
+}
+
+/* End Contact */
+
+/* Begin Register */
+
+.register {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.register-container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+}
+
+.register-container h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #717171;
+    text-align: center;
+}
+
+.register-container .form-signup {
+    margin-top: 30px;
+}
+
+.form-signup .signup-box {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.signup-box label {
+    color: #333;
+}
+
+.form-signup .signup-box.required label::after {
+    content: "*";
+    color: #ff0000;
+    margin-left: 4px;
+}
+
+.form-signup :where(.signup-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.signup-box input:focus {
+    box-shadow: 0 1px 0 #afdf8a;
+}
+
+.form-signup .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form-group .gender-box {
+    margin-top: 20px;
+}
+
+.gender-box h4 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    padding-top: 16px;
+}
+
+.form-signup :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form-signup .gender {
+    column-gap: 5px;
+}
+
+.gender input {
+    accent-color: #1D7035;
+}
+
+.form-signup :where(.gender input, .gender label) {
+    cursor: pointer;
+}
+
+.gender label {
+    color: #707070;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form-signup button {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400px;
+    transition: all 0.2s ease;
+    background-color: #1D7035;
+}
+
+.form-signup button:hover {
+    background-color: #2e7141;
+}
+
+
+/* Show click Sign up*/
+
+.modal-sign {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 6px;
+    border: #1D7035 solid 2px;
+    background-color: #dfe0de;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#modal-message {
+    margin: 0;
+}
+
+/* Style close button */
+.modal-close {
+    color: #111;
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    cursor: pointer;
+}
+/* Responsive */
+
+@media screen and (max-width: 500px) {
+    .form-signup .column {
+        flex-wrap: wrap;
+    }
+    .form-signup :where(.gender-option, .gender) {
+        row-gap: 15px;
+    }
+}
+
+/* End Register */
+
+
+
+/* Begin Login */
+
+.container-login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login {
+    border-radius: 6px;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.form-content h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #717171;
+    text-align: center;
+}
+
+.form-input {
+    margin-top: 30px;
+}
+
+.form-login .field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.field input,
+.field button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.field input {
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #CACACA;
+}
+
+.field input:focus {
+    box-shadow: 0 1px 0 #afdf8a;
+}
+
+.fa-regular {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.form-input .forgot-password {
+    text-align: right;
+
+}
+
+.field button {
+    color: #fff;
+    background-color: #1D7035;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.field button:hover {
+    background-color: #4a7556;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link a {
+    font-size: 14px;
+    font-weight: 400px;
+    color: #1D7035;
+}
+
+.font-input a {
+    text-decoration: none;
+}
+
+.form-content a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #333;
+}
+
+.line::before {
+    content: 'Hoặc';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #717171;
+    padding: 0 15px;
+}
+
+.media-options a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#message {
+    margin-top: 10px;
+}
+
+
+a.facebook {
+    color: #fff;
+    background-color: #3c65b5;
+}
+
+.facebook:hover {
+    background-color: #5877b7;
+}
+
+
+a.facebook .fa-facebook-f {
+    height: 28px;
+    width: 28px;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.facebook .fa-facebook-f,
+img.google-img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+img.google-img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.media-options .google {
+    background-color: #eeecec;
+}
+
+a.google {
+    border: 1px solid #a2a0a0;
+}
+
+.google:hover {
+    background-color: #f7f5f5;
+}
+
+a.google span {
+    font-weight: 500;
+    opacity: 0.8;
+    color: #000;
+}
+
+
+/* End Login */
