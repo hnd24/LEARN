@@ -3,7 +3,7 @@ from datetime import timedelta
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
-app.permanent_session_lifetime = timedelta(seconds=3)
+app.permanent_session_lifetime = timedelta(seconds=10)
 
 @app.route('/')
 def hello():
@@ -17,6 +17,7 @@ def user(name):
 @app.route('/hello')
 def hello_user():
     if "user" in session:
+        flash('Login successful!', "info")
         name = session["user"]
         print(f"🌱🌱🌱 User found in session: {name}")
         return f"<h1>Hello, {name}!</h1>"
@@ -43,14 +44,17 @@ def login():
         # Here you would typically validate the username and password
         print(f"🌱🌱🌱 Login attempt with username: {username} and password: {password}")
         session.permanent = True
+    
         if username:
             session['user'] = username  # Sửa lại key thành 'user' để đồng bộ với hàm user()
-            return redirect(url_for('hello_user', name=username))
+            flash('Login successful!', "info")
+            # return redirect(url_for('hello_user', name=username))
     return render_template('auth/login.html')
 
 @app.route('/logout')
 def logout():
     session.pop('user', None)
+    flash('Logout successful!', "info")
     return redirect(url_for('hello_user'))
 
 if __name__ == '__main__':
